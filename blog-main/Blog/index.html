@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:black; font-size:24px;margin-left: 23px;">DailyBlog</h1>
+        <p id="welcome-user" style="margin-left: 850px;"></p>
+        <button id="auth-button" onclick="handleAuthButton()" >Login/Signup</button>
+    </header>
+
+    <main id="blog-container">
+        <section id="create-blog">
+            <h1 style="font-size: 60px;">Every Voice Counts: Begin Your Blogging Adventure!</h1>
+            <br>
+            <button id="create-blog-btn" onclick="window.location.href='createblog.html'" style="padding: 15px; font-size: 20px;border-radius: 40px;">Create a Blog</button>
+        </section>
+        <br>
+        <br>
+        <div class="statement">
+            <h2 style="text-align: center;font-family:cursive;font-size:30px;">Uncover Stories</h2>
+        </div>
+        <br>
+        <div id="blogs"></div>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

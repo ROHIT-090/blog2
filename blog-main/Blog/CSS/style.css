@@ -1,0 +1,220 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: aliceblue;
+}
+
+
+header {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-bottom: 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    justify-content: space-between;
+    text-align: left;
+}
+#create-blog {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 10px white;
+}
+
+main {
+    padding: 2rem;
+}
+.statement {
+    position: relative;
+    text-align: center;
+}
+
+.statement h2 {
+    font-size: 2em; 
+    color: #333; 
+}
+
+.statement::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -9px; 
+    width: 20%; 
+    height: 5px; 
+    background: grey; 
+    transform: translateX(-50%); 
+    border-radius: 5px; 
+}
+#form-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+input[type="email"],
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: dimgray;
+}
+
+
+
+
+#toggle-message {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#toggle-text {
+    color: #333;
+}
+
+
+#message {
+    color: red; 
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+#blogs h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 100px;
+}
+
+.blog-post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+    font-size: 20px; 
+    color: black;
+}
+
+.blog-post .summary {
+    margin: 10px 0;
+    color: dimgray;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+.openblog {
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.openblogpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blogcreation {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.blogcreation h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blogcreation label {
+    font-size: 18px;
+    font-family: 'Impact', sans-serif;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blogcreation textarea {
+    height: 150px;
+    resize: vertical;
+    width: 100%;
+   font-size: large;
+}
+
+.blogcreation button[type="submit"] {
+    display: block;
+    margin: 20px auto; 
+}
+
+
+@media (max-width: 768px) {
+    #blogs {
+        grid-template-columns: 1fr; 
+    }
+}
+.loginpage
+{
+    background-color: white;
+    max-width: 600px;
+    padding: 30px;
+  
+
+}
+.loginover{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

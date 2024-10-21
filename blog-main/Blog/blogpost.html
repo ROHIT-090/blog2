@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:black; font-size:24px;margin-left: 23px;">DailyBlog</h1>
+        <button onclick="window.location.href='index.html'">Home</button>
+    </header>
+    <br>
+    
+    
+    <main class="openblogpage">
+        <div class="openblog">
+        <article id="blog-post">
+            <h2 id="blog-title" style="font-size:xxx-large;font-family: 'Lucidau'"></h2>
+            <br><br>
+            <p id="blog-content" style="font-family:cursive ;color: gray; line-height:30px;white-space:pre-wrap;"></p>
+        </article>
+        </div>
+    </main>
+
+    <script>
+        
+        const blog = JSON.parse(localStorage.getItem('currentBlog'));
+        if (blog) {
+            document.getElementById('blog-title').textContent = blog.title;
+            document.getElementById('blog-content').textContent = blog.content;
+        }
+    </script>
+</body>
+</html>

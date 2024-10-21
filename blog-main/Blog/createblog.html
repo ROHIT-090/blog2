@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:black; font-size:24px;margin-left: 23px;">DailyBlog</h1>
+        <button onclick="window.location.href='index.html'">Home</button>
+        
+    </header>
+
+    <main id="create-blog-form">
+        <se5ction id="add-blog-section" class="blog">
+            <h2 style="font-size: 50px; margin-left: 100px;">Tell Your Tale...</h2>
+            
+            <form id="blog-form" class="blogcreation">
+                <label for="blog-title">Title:</label>
+                <input type="text" id="blog-title" required>
+
+                <label for="blog-summary">Summary:</label>
+                <textarea id="blog-summary" required></textarea>
+
+                <label for="blog-content">Content:</label>
+                <textarea id="blog-content" required></textarea>
+
+                <button type="submit" id="publishblog">Publish Blog</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
